@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/adir-hagag-09-04-2021/static/css/main.63d532e3.chunk.css",
+    "main.js": "/adir-hagag-09-04-2021/static/js/main.b9b9d68d.chunk.js",
+    "main.js.map": "/adir-hagag-09-04-2021/static/js/main.b9b9d68d.chunk.js.map",
+    "runtime-main.js": "/adir-hagag-09-04-2021/static/js/runtime-main.bfab1d16.js",
+    "runtime-main.js.map": "/adir-hagag-09-04-2021/static/js/runtime-main.bfab1d16.js.map",
+    "static/js/2.0bf13fcc.chunk.js": "/adir-hagag-09-04-2021/static/js/2.0bf13fcc.chunk.js",
+    "static/js/2.0bf13fcc.chunk.js.map": "/adir-hagag-09-04-2021/static/js/2.0bf13fcc.chunk.js.map",
+    "static/js/3.d3b59a66.chunk.js": "/adir-hagag-09-04-2021/static/js/3.d3b59a66.chunk.js",
+    "static/js/3.d3b59a66.chunk.js.map": "/adir-hagag-09-04-2021/static/js/3.d3b59a66.chunk.js.map",
+    "index.html": "/adir-hagag-09-04-2021/index.html",
+    "service-worker.js": "/adir-hagag-09-04-2021/service-worker.js",
+    "service-worker.js.map": "/adir-hagag-09-04-2021/service-worker.js.map",
+    "static/css/main.63d532e3.chunk.css.map": "/adir-hagag-09-04-2021/static/css/main.63d532e3.chunk.css.map",
+    "static/js/2.0bf13fcc.chunk.js.LICENSE.txt": "/adir-hagag-09-04-2021/static/js/2.0bf13fcc.chunk.js.LICENSE.txt",
+    "static/media/15.png": "/adir-hagag-09-04-2021/static/media/15.9aac7942.png",
+    "static/media/16.png": "/adir-hagag-09-04-2021/static/media/16.02f6796a.png",
+    "static/media/17.png": "/adir-hagag-09-04-2021/static/media/17.4b8d4543.png",
+    "static/media/41.png": "/adir-hagag-09-04-2021/static/media/41.da896071.png",
+    "static/media/main.scss": "/adir-hagag-09-04-2021/static/media/Scattering-clouds.2ad5bc3f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bfab1d16.js",
+    "static/js/2.0bf13fcc.chunk.js",
+    "static/css/main.63d532e3.chunk.css",
+    "static/js/main.b9b9d68d.chunk.js"
+  ]
+}
