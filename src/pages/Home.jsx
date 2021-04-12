@@ -3,11 +3,14 @@ import { MainHome } from '../cmps/Home/MainHome'
 import { LocationSearch } from '../cmps/Home/LocationSearch'
 import { weatherService } from '../services/weatherService.js'
 import { useParams } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { setErrMsg } from '../store/actions/weatherAction'
 
 export const Home = () => {
 
   const [posConditions, setPosConditions] = useState(null)
   const [forecast, setForecast] = useState([])
+  const dispatch = useDispatch()
   const params = useParams()
 
   const loadPosConditions = async (cities, cityName) => {
@@ -29,6 +32,10 @@ export const Home = () => {
     }
 
     const fetchedCurrConditions = await weatherService.getCurrConditions(chosenCity.Key, chosenCity.LocalizedName)
+    if (typeof fetchedCurrConditions === 'string') {
+      dispatch(setErrMsg(fetchedCurrConditions))
+      return
+    }
     await loadForecast(chosenCity.Key)
     setPosConditions(fetchedCurrConditions)
   }
@@ -53,9 +60,9 @@ export const Home = () => {
   }
 
   return (
-    <div className="home flex column ">
-      <LocationSearch loadPosConditions={loadPosConditions} />
-      {posConditions && forecast && <MainHome posConditions={posConditions} forecast={forecast} toggleIsFavorite={toggleIsFavorite} />}
-    </div>
+      <div className="home flex column ">
+        <LocationSearch loadPosConditions={loadPosConditions} />
+        {posConditions && forecast && <MainHome posConditions={posConditions} forecast={forecast} toggleIsFavorite={toggleIsFavorite} />}
+      </div>
   )
 }

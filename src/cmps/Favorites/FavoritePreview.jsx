@@ -26,7 +26,7 @@ export const FavoritePreview = ({ location }) => {
     <div className="favorite-preview " onClick={handlePreviewClick}>
       <div>
         <h1 className="title-text">{location.cityName}</h1>
-        <p className="description-text">{celsiusTemp.toFixed(1)}</p>
+        <p className="description-text">{celsiusTemp}</p>
       </div>
       <p className="text description-text">{locationConditions.currConditions.WeatherText}</p>
     </div>

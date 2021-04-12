@@ -32,3 +32,15 @@ export function removeLocation(cityKey) {
     }
   }
 }
+
+export function setErrMsg(errMsg) {
+  return (dispatch) => {
+    dispatch({ type: 'SET_ERR_MSG', description: errMsg })
+  }
+}
+
+export function closeErrMsg() {
+  return (dispatch) => {
+    dispatch({ type: 'CLOSE_ERR_MSG' })
+  }
+}
