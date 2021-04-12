@@ -16,27 +16,23 @@ const storageCityList = 'citiesDB'
 const storageCurrConditions = 'currWeatherDB'
 const storageForecast = 'forecastDB'
 const storageFavorites = 'favoritesDB'
-let counter = 0;
 
 async function getCityAutocomplete(cityName) {
   try {
-    const baseUrl = `https://`
-    // const baseUrl = `https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${apiKey}&q=${cityName}&language=en-us`
+    const baseUrl = `https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${apiKey}&q=${cityName}&language=en-us`
     const res = await axios.get(baseUrl)
-    storageService.save(storageCityList, res.data)
-
+    
     return res.data
   } catch (err) {
     return `Couldn't load the cities list please try again later`
-    // _catchFunction(getCityAutocomplete, cityName)
   }
+  // storageService.save(storageCityList, res.data)
   // return storageService.load(storageCityList)
 }
 
 async function getCurrConditions(cityKey, cityName) {
   try {
-    const baseUrl = `https://`
-    // const baseUrl = `https://dataservice.accuweather.com/currentconditions/v1/${cityKey}?apikey=${apiKey}&language=en-us&details=false`
+    const baseUrl = `https://dataservice.accuweather.com/currentconditions/v1/${cityKey}?apikey=${apiKey}&language=en-us&details=false`
     const res = await axios.get(baseUrl)
 
     return {
@@ -49,7 +45,6 @@ async function getCurrConditions(cityKey, cityName) {
     }
   } catch (err) {
     return `Couldn't load the city weather please try again later`
-    // _catchFunction(getCurrConditions, cityKey, cityName)
   }
   // const currConditions = storageService.save(storageCurrConditions, res.data[0])
   // const currConditions = storageService.load(storageCurrConditions)
@@ -65,14 +60,12 @@ async function getCurrConditions(cityKey, cityName) {
 
 async function getForecast(cityKey, isMetric = true) {
   try {
-    const baseUrl = `https://`
-    // const baseUrl = `https://dataservice.accuweather.com/forecasts/v1/daily/5day/${cityKey}?apikey=${apiKey}&language=en-us&details=false&metric=${isMetric}`
+    const baseUrl = `https://dataservice.accuweather.com/forecasts/v1/daily/5day/${cityKey}?apikey=${apiKey}&language=en-us&details=false&metric=${isMetric}`
     const res = await axios.get(baseUrl)
 
     return res.data.DailyForecasts
   } catch (err) {
     return `Couldn't load the weather forecast please try again later`
-    // _catchFunction(getForecast, cityKey)
   }
   // storageService.save(storageForecast, res.data.DailyForecasts)
   // const forecast = storageService.load(storageForecast)
@@ -116,13 +109,4 @@ function _checkIfFavorite(cityKey) {
   if (!favoriteLocation) return false
 
   else return true
-}
-
-async function _catchFunction(func, ...args) {
-  if (counter < 3) {
-    counter++
-    await func(args)
-  } else {
-    counter = 0
-  }
 }
