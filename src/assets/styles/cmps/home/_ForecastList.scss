@@ -1,0 +1,15 @@
+.forecast-list {
+  flex-grow: 1;
+  align-items: flex-end;
+  margin-bottom: 50px;
+
+  @media (max-width: 750px) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 540px) {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+}

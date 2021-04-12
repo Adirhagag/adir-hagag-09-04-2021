@@ -1,0 +1,65 @@
+.main-home {
+  border: 1px solid black;
+  margin: 20px 100px;
+  padding: 10px;
+  flex-grow: 1;
+  background-image: url(../../../img/Scattering-clouds.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (max-width: 980px) {
+    margin: 20px 50px;
+  }
+
+  @media (max-width: 750px) {
+    margin: 20px 10px;
+  }
+
+  .current-weather {
+    img {
+      width: 75px;
+      height: 45px;
+    }
+  }
+
+  .add-to-favorites-wrapper {
+    text-transform: uppercase;
+
+    min-width: 275px;
+    padding: 10px;
+    .checkbox-text {
+      padding: 10px;
+      border: 1px solid black;
+    }
+  }
+}
+
+
+
+
+
+
+[id="heart"] {
+  display: none;
+}
+
+// [for="heart"] {
+//   color: #ffffff;
+//   cursor: pointer;
+//   font-size: 6em;
+//   transition: color 0.2s ease-in-out;
+// }
+
+// [for="heart"]:hover {
+  // color: grey;
+// }
+
+[id="heart"]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+}
+
+
+// @keyframes heart {0%, 17.5% {font-size: 0;}}

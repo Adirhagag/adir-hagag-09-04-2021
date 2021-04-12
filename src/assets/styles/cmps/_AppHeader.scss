@@ -1,0 +1,19 @@
+.app-header {
+  background-color: #10609a;
+  min-height: 12vh;
+  padding: 20px;
+  align-items: center;
+
+  nav {
+    border: 1px solid black;
+    padding: 10px 20px;
+    a {
+      font-size: 1.2rem;
+      color: black;
+      line-height: 100%;
+      &:not(:last-child) {
+        margin-inline-end: 20px;
+      }
+    }
+  }
+}
