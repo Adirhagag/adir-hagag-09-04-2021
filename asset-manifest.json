@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/adir-hagag-09-04-2021/static/css/main.6023428f.chunk.css",
-    "main.js": "/adir-hagag-09-04-2021/static/js/main.059cf8c1.chunk.js",
-    "main.js.map": "/adir-hagag-09-04-2021/static/js/main.059cf8c1.chunk.js.map",
+    "main.css": "/adir-hagag-09-04-2021/static/css/main.c360fe9d.chunk.css",
+    "main.js": "/adir-hagag-09-04-2021/static/js/main.fa55038e.chunk.js",
+    "main.js.map": "/adir-hagag-09-04-2021/static/js/main.fa55038e.chunk.js.map",
     "runtime-main.js": "/adir-hagag-09-04-2021/static/js/runtime-main.bfab1d16.js",
     "runtime-main.js.map": "/adir-hagag-09-04-2021/static/js/runtime-main.bfab1d16.js.map",
-    "static/js/2.bb884030.chunk.js": "/adir-hagag-09-04-2021/static/js/2.bb884030.chunk.js",
-    "static/js/2.bb884030.chunk.js.map": "/adir-hagag-09-04-2021/static/js/2.bb884030.chunk.js.map",
+    "static/js/2.d7105b0d.chunk.js": "/adir-hagag-09-04-2021/static/js/2.d7105b0d.chunk.js",
+    "static/js/2.d7105b0d.chunk.js.map": "/adir-hagag-09-04-2021/static/js/2.d7105b0d.chunk.js.map",
     "static/js/3.d3b59a66.chunk.js": "/adir-hagag-09-04-2021/static/js/3.d3b59a66.chunk.js",
     "static/js/3.d3b59a66.chunk.js.map": "/adir-hagag-09-04-2021/static/js/3.d3b59a66.chunk.js.map",
     "index.html": "/adir-hagag-09-04-2021/index.html",
     "service-worker.js": "/adir-hagag-09-04-2021/service-worker.js",
     "service-worker.js.map": "/adir-hagag-09-04-2021/service-worker.js.map",
-    "static/css/main.6023428f.chunk.css.map": "/adir-hagag-09-04-2021/static/css/main.6023428f.chunk.css.map",
-    "static/js/2.bb884030.chunk.js.LICENSE.txt": "/adir-hagag-09-04-2021/static/js/2.bb884030.chunk.js.LICENSE.txt",
+    "static/css/main.c360fe9d.chunk.css.map": "/adir-hagag-09-04-2021/static/css/main.c360fe9d.chunk.css.map",
+    "static/js/2.d7105b0d.chunk.js.LICENSE.txt": "/adir-hagag-09-04-2021/static/js/2.d7105b0d.chunk.js.LICENSE.txt",
     "static/media/15.png": "/adir-hagag-09-04-2021/static/media/15.9aac7942.png",
     "static/media/16.png": "/adir-hagag-09-04-2021/static/media/16.02f6796a.png",
     "static/media/17.png": "/adir-hagag-09-04-2021/static/media/17.4b8d4543.png",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.bfab1d16.js",
-    "static/js/2.bb884030.chunk.js",
-    "static/css/main.6023428f.chunk.css",
-    "static/js/main.059cf8c1.chunk.js"
+    "static/js/2.d7105b0d.chunk.js",
+    "static/css/main.c360fe9d.chunk.css",
+    "static/js/main.fa55038e.chunk.js"
   ]
 }
